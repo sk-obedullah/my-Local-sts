@@ -1,0 +1,77 @@
+package com.practice.java8;
+
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		
+		/*
+		 * List<Integer> list = Arrays.asList(1,2,3,4,5,6);
+		 * 
+		 * //using a consumer lamda function inside forEach
+		 * list.stream().forEach(a->System.out.println("element  "+a));
+		 * 
+		 * //using a predicate lamda function inside a filter elements of array based on
+		 * //the boolean result of the predicate function
+		 * list.stream().filter(a->a%2==0).forEach(a->System.out.println("element  "+a))
+		 * ;
+		 */
+		/*
+		 * List<String> asList = Arrays.asList("Orange","Banana");
+		 * 
+		 * String str = asList.stream().findAny().orElseGet(()->"Apple");
+		 * System.out.println(str);
+		 */
+		
+		Service service= new Service();
+		List<Employee> employess = service.getEmployess();
+		System.out.println(employess);
+		
+		//performing actions on the list of employee by using  stream
+		
+		employess.stream().forEach(e->System.out.println(e.getName().startsWith("j")));
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+}
